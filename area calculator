@@ -1,0 +1,48 @@
+import java.util.*;
+public class calculator{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("MENU");
+		System.out.println("1.square");
+		System.out.println("2.triangle");
+		System.out.println("3.circle");
+		System.out.println("4.rectangle");
+		System.out.println("5.parallelogram");
+		System.out.println("Enter your choice:");
+		String choice=sc.next();
+		switch(choice){
+			case "1":
+				System.out.println("Enter the value a:");
+				int a=sc.nextInt();
+				System.out.println("area:"+ (a*a));
+				break;
+			case "2":
+				System.out.println("Enter the value height:");
+				int ht=sc.nextInt();
+				System.out.println("Enter the value base:");
+				int base=sc.nextInt();
+				System.out.println("area:"+ (0.5*base*ht));
+				break;
+			case "3":
+				System.out.println("Enter the value radius:");
+				int r=sc.nextInt();
+				System.out.println("area:"+ (3.14*r*r));
+				break;
+			case "4":
+				System.out.println("Enter the value length:");
+				int l=sc.nextInt();
+				System.out.println("Enter the value width:");
+				int w=sc.nextInt();
+				System.out.println("area:"+ (l*w));
+				break;
+			case "5":
+				System.out.println("Enter the value height:");
+				int h=sc.nextInt();
+				System.out.println("Enter the value breath:");
+				int breath=sc.nextInt();
+				System.out.println("area:"+ (h*breath));
+				break;
+			default:System.out.println("INVALID SHAPE");
+		}
+	}
+}
