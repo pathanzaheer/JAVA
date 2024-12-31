@@ -1,5 +1,5 @@
 class InsertionSort{
-	public int insertion(int a[]){
+	public void insertion(int a[]){
 		for(int i=1;i<a.length;i++){
 			int item=a[i];
 			int count=i-1;
@@ -9,8 +9,6 @@ class InsertionSort{
 			}
 			a[count+1]=item;
 		}	
-		
-	return 0;
 	}
 }
 public class Insertion{
